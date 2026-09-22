@@ -21,11 +21,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: xu-cheng/latex-action@v3
         with:
-          root_file: resume.tex
+          root_file: |
+            resume.tex
+            frederique.tex
       - run: |
           mkdir -p site
           cp resume.pdf site/resume.pdf
           cp resume.pdf "site/Juliette_van_Ravenswaay_Claasen_Resume.pdf"
+          cp frederique.pdf site/frederique.pdf
+          cp frederique.pdf "site/Frederique_van_Ravenswaay_Claasen_Resume.pdf"
           cat > site/index.html <<'HTML'
           <!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=resume.pdf"><title>Juliëtte van Ravenswaay Claasen</title><a href="resume.pdf">Resume</a>
           HTML
