@@ -1,0 +1,90 @@
+\documentclass[9pt,letterpaper]{article}
+\usepackage[top=0.22in,bottom=0.22in,left=0.5in,right=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\pagestyle{empty}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt plus 1pt minus 1pt}{1pt plus 1pt minus 1pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{4pt plus 1pt minus 1pt}{1pt}
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=1pt,partopsep=0pt,itemsep=0pt}
+\setlength{\parindent}{0pt}
+\linespread{0.94}
+\begin{document}
+\begin{center}
+    {\Large\bfseries JULIËTTE~VAN~RAVENSWAAY~CLAASEN}
+\end{center}
+\vspace{2pt}
+\begin{center}
+\href{mailto:julie@vanrc.nl}{julie@vanrc.nl} \;|\;
++1 332 276 7425 \;|\;
+New York, NY \;|\;
+\href{https://linkedin.com/in/julievrc}{linkedin.com/in/julievrc} \;|\;
+\href{https://github.com/julievrc}{github.com/julievrc}
+\end{center}
+\vspace{0.05cm}
+\textbf{Summary:} Senior backend engineer who takes AI products from concept to production: LLM generation pipelines, ML inference infrastructure, and the AWS platform underneath them. End-to-end ownership at a fast-moving startup; deep in Go, Python, Terraform, and distributed systems, and comfortable across the full stack.
+\section{Experience}
+\subsection{Lingon Labs \hfill Backend Engineer}
+New York, NY \hfill Jul 2026 -- Present
+\begin{itemize}
+\item Early-stage startup building AI agents for mid-market finance teams (AR/AP, billing, collections, reconciliation) that integrate with NetSuite, QuickBooks, Gmail, Outlook, and Slack, run on triggers, escalate to a human when unsure, and keep a full audit trail.
+\item Engineer on the multi-tenant agent orchestration platform: FastAPI app plus worker, PostgreSQL schema-per-tenant isolation, Redis event bus, Pregel-style graph engine with a distributed leased runtime, sandboxed execution, Gmail Pub/Sub, React client on GCP; authored the architecture guides for the engine, business, client, and services subsystems.
+\end{itemize}
+\subsection{Dune Security \hfill Senior Backend Software Engineer}
+New York, NY \hfill Aug 2024 -- Jul 2026
+\begin{itemize}
+\item Designed and shipped an LLM-powered content generation platform (AWS Bedrock, Llama) serving enterprise deployments of 10,000+ users; cut campaign setup time by over 60\% through dynamic group expansion and scheduling orchestration.
+\item Owned the company's first AI voice attack product end-to-end: Whisper audio validation, TTS synthesis, GPU orchestration on Modal, and delivery integration; took it from concept to production launch.
+\item Built and operated AWS infrastructure via Terraform: VPC, EKS, Lambda, S3, EventBridge, and CloudWatch modules across dev/QA/prod; deployed Keycloak SSO on EKS via Helm.
+\item Built behavioral telemetry and anomaly detection pipelines processing user activity at enterprise scale, directly powering the platform's adaptive risk scoring.
+\item Integrated third-party intelligence APIs (BreachSense, HaveIBeenPwned) to enrich identity exposure signals and prioritize insider risk profiles across enterprise customers.
+\item Built a reusable document processing pipeline (``Bulk-Disassembler'') for HTML cleaning and placeholder substitution; standardized output quality across 150+ production templates.
+\item Conducted authorized red-team engagements: discovery, exploit validation, post-exploitation analysis, and formal client reporting.
+\end{itemize}
+\vspace{1pt}
+\hfill \textit{\small Promoted twice: Cybersecurity Analyst (Aug 2024) $\rightarrow$ Cybersecurity Engineer (Feb 2025) $\rightarrow$ Senior Backend Engineer (Dec 2025)}
+\subsection{GGD -- Dutch Public Health Office \hfill Data \& Workflow Researcher}
+Amsterdam, NL \hfill Jan 2020 -- Dec 2021
+\begin{itemize}
+\item Supported COVID-19 contact tracing operations across 100,000+ cases; analyzed exposure datasets and contributed to automated reporting pipelines used daily by operational teams at peak pandemic response.
+\end{itemize}
+\section{Projects}
+\subsection{Insider Threat Risk Intelligence Platform \hfill Independent}
+May 2026 -- Present
+\begin{itemize}
+\item Building a production insider threat detection platform on Databricks using a medallion architecture (bronze/silver/gold), ingesting AWS CloudTrail and Microsoft Graph email with normalized event schemas; multi-agent LLM detection pipeline with HR context multipliers producing per-employee risk scores.
+\item Deployed Streamlit dashboard with RBAC showing department risk overview, employee drill-down, and PDF export; email sentiment via Claude on AWS Bedrock, architected so no data leaves the AWS account.
+\end{itemize}
+\section{Education}
+\subsection{Fordham University \hfill New York, NY}
+MSc Computer Science, GPA: 3.8 / 4.0 \hfill Aug 2023 -- May 2025
+\subsection{Vrije Universiteit Amsterdam \hfill Amsterdam, NL}
+BSc International Business Administration \hfill Sep 2019 -- Jun 2022
+\section{Leadership \& Extracurricular}
+\textbf{AFI President} \hfill Jan 2020 -- Dec 2022 \\
+Led continuity of a 300-member organization through COVID-19; oversaw \euro4M renovation and raised \euro350,000 for charity.
+\vspace{1pt}
+
+\textbf{Licensed Private Pilot (EASA + FAA)} \hfill 2025
+\vspace{1pt}
+
+\textbf{3x NYC Marathon Finisher} \hfill 2021, 2022, 2024
+\vspace{1pt}
+
+\textbf{Captain -- Subnational Ladies 1st Field Hockey Team (Rood-Wit)} \hfill 2018 -- 2019
+\section{Additional Information}
+\textbf{Languages:} Dutch (Native), English (Fluent) \hfill \textbf{Programming:} Go, Python, SQL, JavaScript, TypeScript, C++
+\vspace{1pt}
+
+\textbf{Backend \& Infrastructure:} FastAPI, Django, AWS (Lambda, S3, EKS, EventBridge), GCP, PostgreSQL, Redis, Docker, Terraform, Kubernetes, Helm, MongoDB, Databricks, Delta Lake, PySpark, Distributed Systems
+\vspace{1pt}
+
+\textbf{AI / ML:} LLMs (AWS Bedrock: Claude, Llama), Whisper, Chatterbox TTS, GPU Orchestration (Modal), Multi-Agent Pipelines
+\vspace{1pt}
+
+\textbf{Frontend \& Security:} React, Streamlit, HTML/CSS; Insider Threat Detection, UEBA, Offensive Security
+\end{document}
